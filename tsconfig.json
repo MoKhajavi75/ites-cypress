@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "types": ["node", "cypress"],
+    "paths": {
+      "@fixtures/*": ["cypress/fixtures/*"]
+    }
+  }
+}

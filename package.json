@@ -1,0 +1,47 @@
+{
+  "name": "ites-cypress",
+  "version": "1.0.0",
+  "description": "ITES first meeting - Cypress Live Coding 🧪",
+  "scripts": {
+    "ts": "tsc",
+    "dev": "cypress open --config-file cypress/config/development.json",
+    "test": "cypress run --browser chrome --config-file cypress/config/production.json",
+    "lint": "eslint . --cache",
+    "prettier": "prettier -c . --cache",
+    "format": "prettier -w .",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MohamadKh75/ites-cypress.git"
+  },
+  "author": "MohamadKh75",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^9",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-ava": "^13.2.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.7.1"
+  }
+}

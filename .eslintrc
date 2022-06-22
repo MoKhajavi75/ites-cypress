@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": { "project": "tsconfig.json" }
+    }
+  },
+  "overrides": [{ "files": ["*.json"], "plugins": ["json"] }],
+  "plugins": ["@typescript-eslint", "ava", "cypress", "import", "json", "markdown", "promise"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:ava/recommended",
+    "plugin:cypress/recommended",
+    "plugin:import/recommended",
+    "plugin:json/recommended",
+    "plugin:markdown/recommended",
+    "plugin:promise/recommended"
+  ],
+  "rules": {
+    "no-console": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "import/export": "off",
+    "promise/always-return": "off",
+    "promise/catch-or-return": "off",
+    "promise/no-nesting": "off",
+    "@typescript-eslint/no-namespace": "off",
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "error",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "cypress/no-pause": "error"
+  }
+}

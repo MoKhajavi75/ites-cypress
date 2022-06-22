@@ -1,0 +1,12 @@
+{
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+
+  "baseUrl": "https://alibaba.ir",
+  "retries": {
+    "openMode": 0
+  },
+  "chromeWebSecurity": false,
+  "numTestsKeptInMemory": 0,
+  "watchForFileChanges": false,
+  "videoCompression": false
+}
